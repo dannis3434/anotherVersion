@@ -241,6 +241,10 @@ module.exports = {
   ***************************************************************************/
   sockets: {
 
+    onlyAllowOrigins: [
+      'https://anotherversion.herokuapp.com/'
+    ],
+
     /***************************************************************************
     *                                                                          *
     * Uncomment the `onlyAllowOrigins` whitelist below to configure which      *
