@@ -119,7 +119,7 @@ module.exports = function () {
         var contextSurgery = outputContexts.parameters.surgery;
         var surgery = await db.collection('surgery').doc(contextSurgery).get();
         var name = surgery.data()['content'];
-        agent.add(await getDoctorList() + '，但個別醫生收費有異，而醫療服務收費昤會作出修改，而病人情況因人而異，如有需要請向你的醫生請教。本平台只搜集病人個案，會力求資料正確，內容只供參考之用，未得同意，不得作其他商業用途，唯最終資料準確性，請諮詢醫生及專業人仕。 若有其他的查詢和分享，請輸入"again" ; 若無，請輸入"end" ');
+        agent.add(await getDoctorList() + '，但個別醫生收費有異，而醫療服務收費昤會作出修改，而病人情況因人而異，如有需要請向你的醫生請教。本平台只搜集病人個案，會力求資料正確，內容只供參考之用，未得同意，不得作其他商業用途，唯最終資料準確性，請諮詢醫生及專業人仕。 若有其他的查詢和分享，請輸入"1" ; 若無，請輸入"2" ');
 
         async function getDoctorList() {
             var countNum = 1;
