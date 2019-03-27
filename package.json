@@ -1,5 +1,5 @@
 {
-  "name": "another-version",
+  "name": "wecarebill",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -8,9 +8,14 @@
     "@sailshq/connect-redis": "^3.2.1",
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
+    "actions-on-google": "^2.6.0",
     "async": "2.0.1",
-    "firebase-admin": "^7.1.1",
+    "dialogflow": "^0.8.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "firebase-admin": "^7.1.0",
     "grunt": "1.0.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
     "sails": "^1.0.2",
     "sails-hook-grunt": "^3.0.2",
     "sails-hook-orm": "^2.0.0-16",
@@ -28,9 +33,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/user/another-version.git"
+    "url": "git://github.com/anonymous node/sails user/wecarebill.git"
   },
-  "author": "user",
+  "author": "anonymous node/sails user",
   "license": "",
   "engines": {
     "node": ">=8.12"

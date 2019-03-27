@@ -11,6 +11,16 @@
 
 module.exports.bootstrap = async function(done) {
 
+  // var admin = require('firebase-admin');
+  // var serviceAccount = require(sails.config.appPath + '/wecarebill-92132-firebase-adminsdk-7usxj-6240df0e36.json');
+  // admin.initializeApp({
+  //   credential: admin.credential.cert(serviceAccount),
+  //   databaseURL: 'https://wecarebill-92132.firebaseio.com'
+
+  // });
+
+  // var db = admin.firestore();
+
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:
@@ -27,8 +37,6 @@ module.exports.bootstrap = async function(done) {
   // ]);
   // ```
 
-  // Don't forget to trigger `done()` when this bootstrap function's logic is finished.
-  // (otherwise your server will never lift, since it's waiting on the bootstrap)
   var admin = require('firebase-admin');
 
   var serviceAccount = require(sails.config.appPath + '/wecarebill-92132-firebase-adminsdk-7usxj-6240df0e36.json');

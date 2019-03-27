@@ -241,8 +241,6 @@ module.exports = {
   ***************************************************************************/
   sockets: {
 
-  
-
     /***************************************************************************
     *                                                                          *
     * Uncomment the `onlyAllowOrigins` whitelist below to configure which      *
@@ -252,9 +250,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-   onlyAllowOrigins: [
-    'https://anotherversion.herokuapp.com'
-  ],
+    onlyAllowOrigins: [
+      'https://wecarebill.herokuapp.com'
+    ],
 
 
     /***************************************************************************

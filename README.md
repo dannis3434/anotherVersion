@@ -1,4 +1,4 @@
-# another-version
+# wecarebill
 
 a [Sails v1](https://sailsjs.com) application
 
@@ -15,7 +15,7 @@ a [Sails v1](https://sailsjs.com) application
 
 ### Version info
 
-This app was originally generated on Wed Mar 27 2019 22:10:52 GMT+0800 (HKT) using Sails v1.0.2.
+This app was originally generated on Fri Mar 08 2019 14:13:50 GMT+0800 (中國標準時間) using Sails v1.0.2.
 
 <!-- Internally, Sails used [`sails-generate@1.15.28`](https://github.com/balderdashy/sails-generate/tree/v1.15.28/lib/core-generators/new). -->
 

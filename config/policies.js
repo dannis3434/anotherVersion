@@ -9,6 +9,11 @@
  */
 
 module.exports.policies = {
+  MainController: {
+
+    // fulfill: 'fulfillment'
+
+}
 
   /***************************************************************************
   *                                                                          *
