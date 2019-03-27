@@ -12,7 +12,7 @@ module.exports = {
     index2: async function (req, res) {
         // var outputContexts = agent.context.get('outputcontexts');
         var db = sails.firebaseAdmin.firestore();
-        var contextOption = 'A';
+        var contextOptions = 'A';
         var contextSurgery = '58';
    
         async function getOptions() {
@@ -27,15 +27,18 @@ module.exports = {
             // var generalOptionsRef = await db.collection('general').doc('option').getCollections();
             // Use for each to loop all collections > element = a collection
             for (const element of optionsRef) {
-                if (contextOption === abc[count]){
-                    console.log(contextOption +" and "+abc[count])
+                if (contextOptions === abc[count]){
+                    var optionDocs = await element.doc('1').get();
+                    var optionDocs1 = await element.where('price', '>' , 0).get();
+                    console.log("optionDocs is " + optionDocs);
+                    var output = await optionDocs.data()['content'] + '的其他選項如下: '
+                    optionDocs1.forEach(doc => {
+                            // console.log(doc.id);
+                            // console.log(doc.data().price);
+                            output += doc.id+'. '+ doc.data()['content'] +" : $" +doc.data().price +".      ";
+                        });
                 }
-                var tempElement = await element.doc('1').get(); //First doc of each collection is the base case
-                console.log("Specific內容是: " + tempElement.data()['content']);
-                output += await abc[count] + tempElement.data()['content'] + ",  ";
-                //output += await abc[count] + tempElement.data()['內容'] + ",  ";
                 count++;
-                console.log(output);
             }
             
                 return output
