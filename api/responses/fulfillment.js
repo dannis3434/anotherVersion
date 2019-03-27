@@ -23,7 +23,7 @@ module.exports = function () {
     async function noDoctorName(agent) {
         var outputContexts = agent.context.get('outputcontexts');
         var contextSurgery = outputContexts.parameters.surgery; 
-
+console.log(contextSurgery)
         // Search the document of the requested surgery from firebase
          var surgery = await db.collection('surgery').doc(contextSurgery).get();
 
@@ -70,6 +70,7 @@ module.exports = function () {
     intentMap.set('Default Fallback Intent', fallback);
     // intentMap.set('user provides doctor name', doctorName);
     intentMap.set('user does not provide doctor name', noDoctorName)
+    
     // intentMap.set('followup', followup);
     // intentMap.set('user modifies options', option);
     // intentMap.set('show modified options', modified);
