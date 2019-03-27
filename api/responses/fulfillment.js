@@ -112,7 +112,7 @@ module.exports = function () {
         var outputMessage = await getOptions();
         agent.add(outputMessage);
     }
-    
+
     async function doctorList(agent) {
         var outputContexts = agent.context.get('outputcontexts');
         console.log('outputContexts: ' + outputContexts);
@@ -293,7 +293,7 @@ module.exports = function () {
     intentMap.set('user provides surgery', surgery);
     intentMap.set('user provides doctor name', doctorName);
     intentMap.set('user does not provide doctor name', noDoctorName)
-    intentMap.set(' user wants to know more info', detail)
+    intentMap.set('user wants to know more info', detail)
     intentMap.set('followup', followup);
     intentMap.set('user modifies options', option);
     intentMap.set('show modified options', modified);
