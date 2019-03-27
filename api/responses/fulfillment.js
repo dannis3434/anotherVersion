@@ -28,7 +28,7 @@ module.exports = function () {
         let params = agent.parameters;
         var surgery = params.surgery;
         console.log("The surgery name is " + surgery);
-        agent.add('請問醫生名稱，如不知道，請輸入"不知道"**');
+        agent.add('請問醫生名稱，如不知道，請輸入0');
     }
 
 
