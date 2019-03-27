@@ -112,6 +112,7 @@ module.exports = function () {
         var outputMessage = await getOptions();
         agent.add(outputMessage);
     }
+    
     async function doctorList(agent) {
         var outputContexts = agent.context.get('outputcontexts');
         console.log('outputContexts: ' + outputContexts);
