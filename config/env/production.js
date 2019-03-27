@@ -241,9 +241,7 @@ module.exports = {
   ***************************************************************************/
   sockets: {
 
-    onlyAllowOrigins: [
-      'https://anotherversion.herokuapp.com/'
-    ],
+  
 
     /***************************************************************************
     *                                                                          *
@@ -254,10 +252,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+   onlyAllowOrigins: [
+    'https://anotherversion.herokuapp.com'
+  ],
 
 
     /***************************************************************************
